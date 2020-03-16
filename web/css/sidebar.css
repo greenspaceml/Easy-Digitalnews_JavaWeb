@@ -1,0 +1,30 @@
+
+.sidebar {
+    width: 236px;
+    height: auto;
+    margin-left: 10px;
+    padding-right: 80px;
+}
+.newst {
+    width: 236px;
+    height: auto;
+    font-size: 13px;
+    padding-bottom: 20px;
+}
+.searchBox {
+    border: dashed 1px;
+}
+.searchButton {
+    border: none;
+    background-color: transparent;
+    font-weight: bold;
+    color: #999999;
+}
+/*??*/
+.lastArticles {
+    padding-bottom: 20px;
+}
+.lastArticles a {
+    color: #42554e;
+}
+

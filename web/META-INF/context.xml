@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context path="/DigitalNews">
+  <Environment name="serverName" type="java.lang.String" value="localhost"/>
+  <Environment name="dbName" type="java.lang.String" value="DigitalNews"/>
+  <Environment name="portNumber" type="java.lang.String" value="1111"/>
+  <Environment name="username" type="java.lang.String" value="sa"/>
+  <Environment name="password" type="java.lang.String" value="1"/>
+  <Environment name="image" type="java.lang.String" value="images/"/>
+</Context>
