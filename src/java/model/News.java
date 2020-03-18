@@ -3,7 +3,6 @@ package model;
 import context.ContextPath;
 import java.sql.Date;
 import java.text.SimpleDateFormat;
-import java.util.GregorianCalendar;
 
 public class News {
 
