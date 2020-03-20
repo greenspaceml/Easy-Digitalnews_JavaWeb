@@ -146,7 +146,7 @@ public class NewsDAO {
         Connection connection = null;
         PreparedStatement ps = null;
         ResultSet rs = null;
-        ArrayList<News> news = new ArrayList<>();
+        ArrayList<News> listNews = new ArrayList<>();
         DBContext dBContext = new DBContext();
         //sql statement
         String sql = "SELECT *\n"
@@ -173,7 +173,7 @@ public class NewsDAO {
                 n.setAuthor(rs.getString("author"));
                 n.setTimePost(rs.getDate("timePost"));
                 n.setShortDes(rs.getString("shortDes"));
-                news.add(n);
+                listNews.add(n);
             }
         } catch (Exception ex) {
             throw ex;
@@ -181,7 +181,7 @@ public class NewsDAO {
             //close all connection
             dBContext.closeAll(connection, ps, rs);
         }
-        return news;
+        return listNews;
     }
 
 }

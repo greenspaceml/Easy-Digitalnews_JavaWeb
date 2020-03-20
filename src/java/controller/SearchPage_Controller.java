@@ -22,7 +22,7 @@ public class SearchPage_Controller extends HttpServlet {
             ArrayList<News> SearchedList = new ArrayList<>();
             ArrayList<News> top5 = new ArrayList<>();
             News top1 = new News();
-            //ArrayList<String> listImagePath = new ArrayList<>();
+            
             // Get Searched text
             String searchedText = request.getParameter("searchedText");
             if (searchedText.trim().length() == 0) {
@@ -40,6 +40,8 @@ public class SearchPage_Controller extends HttpServlet {
             // Number of post per page
             int pageSize = 3;
             // calculate Number of pages
+            //check if check if totoal pageSize are divive by totalNews or not 
+            //if yes, Num of page = the result else Num of page = the result + 1
             int NumOfPage = (totalNews % pageSize == 0) ? totalNews / pageSize : totalNews / pageSize + 1;
             //Check entered page number is fit or not
             try {

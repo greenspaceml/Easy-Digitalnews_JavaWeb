@@ -12,7 +12,7 @@
             <jsp:include page="Header.jsp"/>
             <div class="content">
                 <div class="main">
-                    <h1>We do not have this content</h1>
+                    <h1> SORRY! This page isn't available :(</h1> 
                 </div>
             </div>
             <jsp:include page="Footer.jsp"/>
