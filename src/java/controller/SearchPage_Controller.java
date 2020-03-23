@@ -24,7 +24,7 @@ public class SearchPage_Controller extends HttpServlet {
             News top1 = new News();
             
             // Get Searched text
-            String searchedText = request.getParameter("searchedText");
+            String searchedText = request.getParameter("searchedText").trim();
             if (searchedText.trim().length() == 0) {
                 errReporter = "Page not found";
             }

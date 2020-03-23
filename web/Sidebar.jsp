@@ -8,7 +8,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Right</title>
         <link href="css/sidebar.css" rel="stylesheet" type="text/css" />
-        <link href="css/style.css" rel="stylesheet" type="text/css"/>
+        
         <%
             News top1 = (News) request.getAttribute("top1");
             ArrayList<News> top5 = (ArrayList<News>) request.getAttribute("top5");

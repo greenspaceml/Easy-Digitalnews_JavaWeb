@@ -40,7 +40,7 @@ public class NewsDAO {
             throw ex;
         } finally {
             //close all connection
-            dBContext.closeAll(connection, ps, rs);
+            dBContext.closeConnection(connection, ps, rs);
         }
         return n;
     }
@@ -73,7 +73,7 @@ public class NewsDAO {
             throw ex;
         } finally {
             //close all connection
-            dBContext.closeAll(connection, ps, rs);
+            dBContext.closeConnection(connection, ps, rs);
         }
         return n;
     }
@@ -108,7 +108,7 @@ public class NewsDAO {
             throw ex;
         } finally {
             //close all connection
-            dBContext.closeAll(connection, ps, rs);
+            dBContext.closeConnection(connection, ps, rs);
         }
         return listNews;
     }
@@ -136,7 +136,7 @@ public class NewsDAO {
             throw ex;
         } finally {
             //close all connection
-            dBContext.closeAll(connection, ps, rs);
+            dBContext.closeConnection(connection, ps, rs);
         }
         return -1;
     }
@@ -179,7 +179,7 @@ public class NewsDAO {
             throw ex;
         } finally {
             //close all connection
-            dBContext.closeAll(connection, ps, rs);
+            dBContext.closeConnection(connection, ps, rs);
         }
         return listNews;
     }

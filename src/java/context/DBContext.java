@@ -26,34 +26,18 @@ public class DBContext {
         return DriverManager.getConnection(url, username, password);
     }
 
-//close the connection
-    public void closeConnection(Connection con) throws Exception {
-        if (!con.isClosed() && con != null) {
-            //close the result set
-            con.close();
-        }
-    }
-
-//close the PreparedStatement
-    public void closePreparedStatement(PreparedStatement ps) throws Exception {
-        if (ps != null) {
-            //close the result set
-            ps.close();
-        }
-    }
-
-//close the ResultSet
-    public void closeResultSet(ResultSet rs) throws Exception {
+    public void closeConnection(Connection con, PreparedStatement ps, ResultSet rs) throws SQLException {
         //check if the result set is closed or not
-        if (rs != null) {
+        if (rs != null && !rs.isClosed()) {
             //close the result set
             rs.close();
         }
-    }
-
-    public void closeAll(Connection con, PreparedStatement ps, ResultSet rs) throws Exception {
-        closePreparedStatement(ps);
-        closeResultSet(rs);
-        closeConnection(con);
+        if (ps != null && !ps.isClosed()) { 
+            //close the preparestement
+            ps.close();
+        }
+        if (con != null && !con.isClosed()) {
+            con.close();
+        }
     }
 }
