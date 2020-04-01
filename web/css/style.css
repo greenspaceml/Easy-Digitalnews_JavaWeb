@@ -63,3 +63,9 @@ body {
     display: inline-block;
     background-image: url(../images/timeicon.gif);
 }
+
+.footer {
+    background-image: url(../images/footer.jpg);
+    width: 886px;
+    height: 78px;
+}

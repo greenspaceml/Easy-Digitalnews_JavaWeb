@@ -51,7 +51,7 @@
                 </div>
                 <jsp:include page="Sidebar.jsp"/> 
             </div>
-            <jsp:include page="Footer.jsp"/>
+<div class="footer"></div>
         </div>
     </body>
 </html>

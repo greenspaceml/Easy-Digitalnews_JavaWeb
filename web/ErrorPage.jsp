@@ -15,7 +15,7 @@
                     <h1> SORRY! This page isn't available :(</h1> 
                 </div>
             </div>
-            <jsp:include page="Footer.jsp"/>
+            <div class="footer"></div>
         </div>
     </body>
 </html>
