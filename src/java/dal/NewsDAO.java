@@ -18,7 +18,7 @@ public class NewsDAO {
         News n = null;
         //sql statament
         String sql = "Select * from DigitalNews \n"
-                + "where ID = ?";
+                + " where ID = ?";
         try {
             //trying connect to database
             connection = dBContext.getConnection();

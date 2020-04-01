@@ -15,7 +15,7 @@ public class DetailPage_Controller extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
-        //check if the codes have any problem not not
+        //check if the codes have any problem or not
         try {
             // creating variable needs
             String errReporter = null;
