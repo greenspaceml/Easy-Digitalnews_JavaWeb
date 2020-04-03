@@ -37,8 +37,8 @@ public class SearchPage_Controller extends HttpServlet {
             }
             // Count number of searched news by searchedText
             int totalNews = newsDAO.RecordCounter(searchedText);
-            // Number of post per page
-            int pageSize = 3;
+            // Number of posts per page
+            int pageSize = 6;
             // calculate Number of pages
             //check if check if totoal pageSize are divive by totalNews or not 
             //if yes, Num of page = the result else Num of page = the result + 1
