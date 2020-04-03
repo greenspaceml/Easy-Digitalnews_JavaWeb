@@ -16,6 +16,7 @@
     </head>
     <body>
         <div class="sidebar">
+            
             <div class="news">
                 <div class="tittle">
                     <div>Digital News</div>
@@ -24,6 +25,7 @@
                     <%=top1.getShortDes()%>
                 </div>
             </div>
+                
             <div class="newst">
                 <div class="tittle">
                     Search
@@ -33,6 +35,7 @@
                     <input class="searchButton" type="submit" name="btnGo" value="Go">
                 </form>
             </div>
+                
             <div class="newst">
                 <div class="tittle">
                     <div>Last Articles</div><br>
@@ -43,6 +46,7 @@
                 </div>
                 <%}%>
             </div>
+            
         </div>
     </body>
 </html>

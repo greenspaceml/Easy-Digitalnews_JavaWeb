@@ -17,7 +17,9 @@
     <body> 
         <div class="container">
             <jsp:include page="Header.jsp"/>
+            
             <div class="content">
+                
                 <div class="main">
                     <div class="news">
                         <div class="tittle">
@@ -38,6 +40,7 @@
                 </div>
                 <jsp:include page="Sidebar.jsp"/> 
             </div>
+            
 <div class="footer"></div>
         </div>
     </body>
